@@ -1,0 +1,134 @@
+* {
+  box-sizing: border-box;
+}
+
+:root {
+  --font-family: 'Crimson Text', serif;
+  --bg-color: #15384e;
+}
+
+html {
+  height: 100%;
+  width: 100%;
+}
+
+html,
+body {
+  background-image: linear-gradient(#b35d7f, #fc8890, #e2c58a);
+  background-repeat: no-repeat;
+  background-size: cover;
+  padding: 0;
+  margin: 0;
+}
+
+body {
+  font-family: var(--font-family);
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  width: 100%;
+  min-height: 100%;
+  position: absolute;
+}
+
+.wrapper {
+  top: 0;
+  left: 0;
+  position: absolute;
+  width: 100%;
+  min-height: auto;
+}
+
+header {
+  width: 100%;
+  height: 50px;
+  position: absolute;
+  top: 0;
+  left: 0;
+  text-align: center;
+  padding: 5px;
+}
+
+header>h1 {
+  margin: 0;
+  padding: 0;
+}
+
+#main {
+  top: 50px;
+  position: relative;
+  padding: 20px;
+}
+
+#calculator {
+  background-color: #00abbc;
+  box-shadow: 6px 6px 6px 6px #203f54;
+  border-radius: 5px;
+  display: grid;
+  grid-template-rows: 1fr 2fr;
+  margin: auto;
+  padding: 20px;
+  width: 400px;
+  height: auto;
+}
+
+#display {
+  display: grid;
+  grid-template-rows: 2fr 1fr;
+  grid-gap: 0;
+  height: 150px;
+  width: 350px;
+  margin: auto;
+}
+
+#history-display {
+  background-color: #d1e6f3;
+  border-top-left-radius: 5px;
+  border-top-right-radius: 5px;
+  grid-column: 1/2;
+  margin: 0;
+  padding: 0;
+  border-bottom: 1px solid #56a2d1;
+}
+
+#input-display {
+  background-color: #fff;
+  border-bottom-left-radius: 5px;
+  border-bottom-right-radius: 5px;
+  color: #0000;
+  grid-column: 1/2;
+  margin: 0;
+  border-width: 0;
+}
+
+#buttons {
+  display: grid;
+  grid-template-columns: repeat(4, 1fr);
+  grid-template-rows: repeat(5, 1fr);
+  grid-gap: 5px;
+  justify-content: center;
+  background-color: #00abbc;
+  padding: 15px;
+}
+
+.button {
+  background-color: #00659d;
+  box-shadow: 2px 2px 2px 2px #000;
+  border-radius: 5px;
+  place-content: center;
+  margin: 5px auto;
+  text-align: center;
+  font-size: 20px;
+  width: 50px;
+  height: 50px;
+  border: 5px solid #0000;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+#equal {
+  grid-column: 3/5;
+  width: 129px;
+}
